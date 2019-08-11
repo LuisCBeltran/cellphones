@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 100px 200px 1fr 100px;
+    grid-template-rows: 200px 200px;
+    grid-template-areas:
+        'cell1 cell2 cell3 cell4'
+        'cell5 cell2 cell6 cell7';
+}
+
+.cell1 {
+    background: red;
+    grid-area: cell1;
+}
+.cell2 {
+    background: blue;
+    grid-area: cell2;
+}
+.cell3 {
+    background: yellow;
+    grid-area: cell3;
+}
+.cell4 {
+    background: green;
+    grid-area: cell4;
+}
+.cell5 {
+    background: grey;
+    grid-area: cell5;
+}
+.cell6 {
+    background: violet;
+    grid-area: cell6;
+}
+.cell7 {
+    background: darkcyan;
+    grid-area: cell7;
+}
