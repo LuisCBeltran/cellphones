@@ -22,36 +22,45 @@
             </div>
 
             <div class="nav-h-up">
-                <p>Call us: 01800328020</p>
-                <p><a href="#">Support</a></p>
-                <p><a href="#">Plans</a></p>
-                <p>
-                    Country: 
-                    <select name="country">
-                        <option>Canada - English</option>
-                        <option>Canada - French</option>
-                        <option>Colombia - Español</option>
-                    </select>
-                </p>
+
+                <ul class="principal-nav">
+                    <li>Call us: 01800328020</li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">Plans</a></li>
+                    <li class="language">EN <i class="fas fa-angle-down"></i>
+                        <ul class="secondary-nav">
+                            <li><a href="#">French</a></li>
+                            <li><a href="#">Spanish</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
             </div>
 
             <div class="nav-h-main">
-                <form action="" class="searchbar">
-                    <input type="search">
-                    <input type="submit">
-                </form>
+                <div class="searchbar">
+                    <input type="text" placeholder="Search" class="searchbox">
+                    <button class="searchbutton"><i class="fas fa-search"></i></button>
+                </div>
                 <div class="nav-right">
-                    <div class="nav-user">
-                        <i class="fas fa-user"></i>
-                        <p>Hello, Luis.</p>
+                    <div class="nav-cart">
+                        <a href="#">
+                            <i class="fas fa-shopping-cart"></i>
+                            <p>Cart</p>
+                        </a>
                     </div>
                     <div class="nav-orders">
-                        <i class="fas fa-box-open"></i>
-                        <p>My Orders</p>
+                        <a href="#">
+                            <i class="fas fa-box-open"></i>
+                            <p>My Orders</p>
+                        </a>
                     </div>
-                    <div class="nav-cart">
-                        <i class="fas fa-shopping-cart"></i>
-                        <p>Cart</p>
+                    <div class="nav-user">
+                        <a href="#">
+                            <i class="fas fa-user"></i>
+                            <p>Hello, Luis</p>
+                        </a>
+                        <a href="#" class="logout">Log Out</a>
                     </div>
                 </div>
             </div>
