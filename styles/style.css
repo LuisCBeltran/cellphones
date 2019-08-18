@@ -5,7 +5,7 @@
     --dprimary: #a80038;
     --light: #fbf9fa;
     --dark: #2b2024;
-    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+    --shadow: 0 1px 7px rgba(206, 206, 206, 0.8);
 }
 
 * {
@@ -203,4 +203,72 @@
 .nav-user:hover > .logout {
     opacity: 1;
     visibility: visible;
+}
+
+/* BRANDS */
+
+.brandswrapper {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cellbrand {
+    margin: 10px;
+    max-width: 100px;
+    padding: 10px 15px;
+    box-shadow: var(--shadow);
+}
+
+.cellbrand img {
+    width: 100%;
+}
+
+/* MAIN GLOBAL */
+
+.mainwrapper {
+    display: grid;
+    grid-template-columns: 170px 1fr 1fr;
+    grid-template-rows: 50px 70px 180px 180px 180px 50px;
+    grid-template-areas:
+        'category category category'
+        'filters resultsup resultsup'
+        'filters cellbox cellbox'
+        'filters cellbox cellbox'
+        '. cellbox cellbox'
+        '. resultsdown resultsdown';
+}
+
+
+/* CATEGORY */
+
+.maincategory {
+    grid-area: category;
+}
+
+/* FILTERS */
+
+.mainfilters {
+    grid-area: filters;
+}
+
+/* RESULTS */
+
+.resultsnumbers {
+    grid-area: resultsup;
+}
+
+/* CELLPHONES */
+
+.cellphones {
+    grid-area: cellbox;
+    display: flex;
+}
+
+/* PAGES END */
+
+.pagesend {
+    grid-area: resultsdown;
 }
